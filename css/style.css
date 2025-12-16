@@ -1,26 +1,21 @@
 :root {
-    /* Primary Colors */
     --primary-green: #1b4d3e;
-    /* Deep Forest Green - Trust, Stability */
     --secondary-green: #4caf50;
-    /* Fresh Leaf Green - Growth, Nature */
     --light-green: #e8f5e9;
-    /* Very light green for backgrounds */
     --accent-gold: #ffc107;
-    /* Gold - Prosperity */
 
-    /* Neutral Colors */
+    /* Warna Netral */
     --text-dark: #333333;
     --text-light: #666666;
     --white: #ffffff;
     --light-gray: #f8f9fa;
     --border-color: #dddddd;
 
-    /* Typography */
+    /* Tipografi */
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    /* Spacing */
+    /* Jarak/Spasi */
     --container-width: 1200px;
     --header-height: 80px;
 }
@@ -42,7 +37,7 @@ body {
     background-color: var(--white);
 }
 
-/* Scroll Offset for Fixed Header */
+/* Offset Gulir untuk Header Tetap */
 section {
     scroll-margin-top: var(--header-height);
 }
@@ -75,7 +70,7 @@ img {
     display: block;
 }
 
-/* Container */
+/* Kontainer */
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
@@ -84,11 +79,11 @@ img {
 
 header .container {
     max-width: 100%;
-    padding: 0 40px; /* Slight padding from edge */
+    padding: 0 40px; 
 }
 
 /* Header & Nav */
-/* Header & Nav */
+/* Header & Navigasi */
 header {
     background: transparent;
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -107,19 +102,19 @@ header.scrolled {
 
 nav {
     display: flex;
-    justify-content: flex-end; /* Align links to right */
+    justify-content: flex-end; /* Ratakan tautan ke kanan */
     align-items: center;
     width: 100%;
 }
 
 .logo {
     position: absolute;
-    left: 40px; /* Position at screen edge */
+    left: 40px; /* Posisi di tepi layar */
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--white); /* Default white for transparent header */
+    color: var(--white); /* Putih default untuk header transparan */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -136,7 +131,7 @@ header.scrolled .logo {
 
 .nav-links a {
     font-weight: 600;
-    color: var(--white); /* Default white for transparent header */
+    color: var(--white); /* Putih default untuk header transparan */
     position: relative;
 }
 
@@ -146,7 +141,7 @@ header.scrolled .nav-links a {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--accent-gold); /* Gold for visibility on dark background */
+    color: var(--accent-gold); /* Emas untuk visibilitas pada latar belakang gelap */
 }
 
 header.scrolled .nav-links a:hover,
@@ -187,7 +182,7 @@ header.scrolled .mobile-menu-btn {
     color: var(--primary-green);
 }
 
-/* Utility Buttons */
+/* Tombol Utilitas */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -216,7 +211,7 @@ header.scrolled .mobile-menu-btn {
     color: var(--primary-green);
 }
 
-/* Footer */
+/* Footer / Kaki Halaman */
 footer {
     background-color: var(--primary-green);
     color: var(--white);
@@ -261,7 +256,7 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Layout Utilities */
+/* Utilitas Tata Letak */
 .section-padding {
     padding: 80px 0;
 }
@@ -285,7 +280,7 @@ footer {
     display: block;
 }
 
-/* Responsiveness */
+/* Responsivitas */
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -301,7 +296,7 @@ footer {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
     
-    /* Ensure mobile menu text is dark even if header is transparent */
+    /* Pastikan teks menu seluler gelap meskipun header transparan */
     .nav-links a {
         color: var(--text-dark);
         font-size: 1.2rem;
@@ -325,7 +320,7 @@ footer {
     }
 }
 
-/* Hero Section */
+/* Bagian Hero */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bgptpn.jpeg');
@@ -338,7 +333,7 @@ footer {
     color: var(--white);
     text-align: center;
     margin-top: calc(-1 * var(--header-height));
-    /* Pull behind header */
+    /* Tarik ke belakang header */
     padding-top: var(--header-height);
 }
 
@@ -367,7 +362,7 @@ footer {
     justify-content: center;
 }
 
-/* About Home Section */
+/* Bagian Tentang Kami di Beranda */
 .about-home {
     background-color: var(--white);
 }
@@ -435,7 +430,7 @@ footer {
     }
 }
 
-/* Page Header (For subpages) */
+/* Header Halaman (Untuk sub-halaman) */
 .page-header {
     background: linear-gradient(rgba(27, 77, 62, 0.9), rgba(27, 77, 62, 0.9)), url('../images/hero-bg.png');
     background-size: cover;
@@ -467,7 +462,7 @@ footer {
     color: var(--accent-gold);
 }
 
-/* History Content */
+/* Konten Sejarah */
 .history-content {
     background-color: var(--white);
 }
@@ -532,7 +527,7 @@ footer {
     }
 }
 
-/* Products Section */
+/* Bagian Produk */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -570,7 +565,7 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Advantages Section */
+/* Bagian Keunggulan */
 .advantages-section {
     background-color: var(--primary-green);
     color: var(--white);
@@ -630,7 +625,7 @@ footer {
 
 
 
-/* Contact Section */
+/* Bagian Kontak */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

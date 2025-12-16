@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize AOS
+    // Inisialisasi AOS
     AOS.init({
         duration: 1000,
         once: true,
         offset: 100
     });
 
-    // Mobile Menu Toggle
+    // Pengalih Menu Seluler
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Close mobile menu when a link is clicked
+    // Tutup menu seluler saat tautan diklik
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Sticky Header Effect
+    // Efek Header Lengket
     const header = document.querySelector('header');
     const scrollHandler = () => {
         if (window.scrollY > 50) {
@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('scrolled');
         }
     };
-    // Initial check
+    // Pemeriksaan awal
     scrollHandler();
     window.addEventListener('scroll', scrollHandler);
 
-    // Scroll Spy for Active Link Highlighting
+    // Scroll Spy untuk Penyorotan Tautan Aktif
     const sections = document.querySelectorAll('section[id]');
     
     function activeMenu() {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 100; // Offset for header
+            const sectionTop = current.offsetTop - 100; // Offset untuk header
             const sectionId = current.getAttribute('id');
             const navLink = document.querySelector(`.nav-links a[href*=${sectionId}]`);
             
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Special case for top of page
+        // Kasus khusus untuk bagian atas halaman
         if (scrollY < 100) {
             document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
             const homeLink = document.querySelector('.nav-links a[href="#home"]');
@@ -78,12 +78,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
     window.addEventListener('scroll', activeMenu);
 
-    // Contact Form Handler
+    // Penangan Formulir Kontak
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            // Simulate form submission
+            // Simulasikan pengiriman formulir
             const btn = this.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
 
