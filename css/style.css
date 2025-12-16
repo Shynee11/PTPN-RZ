@@ -585,7 +585,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    background: url('../images/bgptptn1.jpg') no-repeat center center/cover;
     opacity: 0.1;
 }
 
@@ -628,99 +628,7 @@ footer {
     opacity: 0.9;
 }
 
-/* News Section */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
 
-.news-card {
-    background: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: 0.3s;
-    border: 1px solid var(--border-color);
-}
-
-.news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.news-img {
-    height: 200px;
-    overflow: hidden;
-    background-color: var(--light-gray);
-}
-
-.news-placeholder-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-green);
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 4rem;
-}
-
-.news-content {
-    padding: 25px;
-}
-
-.news-meta {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-bottom: 10px;
-    display: flex;
-    gap: 15px;
-}
-
-.news-meta i {
-    color: var(--secondary-green);
-    margin-right: 5px;
-}
-
-.news-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    line-height: 1.4;
-}
-
-.news-content h3 a:hover {
-    color: var(--secondary-green);
-}
-
-.news-content p {
-    font-size: 0.95rem;
-    color: var(--text-light);
-    margin-bottom: 20px;
-    display: -webkit-box;
-    display: box;
-    /* Standard property for line-clamp if supported */
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    /* Standard property */
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    overflow: hidden;
-}
-
-.read-more {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--secondary-green);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.read-more:hover {
-    color: var(--primary-green);
-    gap: 10px;
-}
 
 /* Contact Section */
 .contact-grid {
